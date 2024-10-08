@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin/
 Allow: /
-Sitemap: https://www.alertmend.io/sitemap.xml
+Sitemap: https://www.alertmend.com/sitemap.xml

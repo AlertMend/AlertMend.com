@@ -72,6 +72,11 @@
       </script>
     <title>AlertMend | Contact Us</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script> 
+        document.addEventListener( 'wpcf7mailsent', function( event ) { 
+        location = 'https://www.example.com/thank-you/'; 
+        }, false ); 
+        </script> 
 </head>
 
 <body class="homepage">
@@ -120,18 +125,24 @@
                     </div>
                     <div class="contactus_block">
                         <div class="contactus_box">
-                            <figure>
+                            <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/hello-alertmend" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+                            <!-- <figure>
                                 <img src="img/illustation_img.png" alt="illustation_img">
-                            </figure>
+                            </figure> -->
                         </div>
                         <div class="contactus_box contform">
                             <div class="wpcf7 js" id="wpcf7-f1272-o1" lang="en-US" dir="ltr">
                                 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-
-                                    <form action="https://formspree.io/f/xanwlobr"    method="POST" class="wpcf7-form init">
+                                <header class="mb-4"><strong>Fill in your details</strong> </header>
+                                <form
+                    action="https://formspree.io/f/xanwlobr"
+                    method="POST" class="wpcf7-form init"
+                    >
                     <p>
                     <label>
-
                         Your email:<br>
                         <span class="wpcf7-form-control-wrap">
                         
@@ -145,17 +156,17 @@
                         <label>
                         Your message:<br>
                         <span class="wpcf7-form-control-wrap">
-                        <textarea name="message" class="wpcf7-form-control wpcf7-textarea" required></textarea></span>
+                          <textarea name="message" class="wpcf7-form-control wpcf7-textarea" required></textarea></span>
                     </span>
                 </label>
                 </p>
-                <input type="hidden" name="_next" value="https://alertmend.io/thanks.html" />
                     <!-- your other form fields go here -->
-                    <button type="submit" class="wpcf7-form-control wpcf7-submit has-spinner btn_1">Send</button>
+                    <button type="submit" class="wpcf7-form-control wpcf7-submit has-spinner btn_1 text-center justify-content-center">Send</button>
                     </form>
-                               
-                               
-                                <!-- <form action="/contact/#wpcf7-f1272-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+                              
+
+<!--                                
+                                <form action="/contact/#wpcf7-f1272-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
                                 <div style="display: none;">
                                 <input type="hidden" name="_wpcf7" value="1272">
                                 <input type="hidden" name="_wpcf7_version" value="5.9.6">
